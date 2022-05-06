@@ -771,6 +771,29 @@ return `updateBook ${oldName} to ${newName}`
   },
 };
 
-Дополни метод updateBook(oldName, newName) так, чтобы он изменял название книги с oldName на newName в свойстве books. 
-Используй indexOf() для того, чтобы найти нужный элемент массива, и splice() для того чтобы заменить этот элемент
+36)
+
+К нам обратилась владелица лавки зелий «У старой жабы» и заказала программу для ведения инвентаря - добавления, удаления, поиска и обновления зелий. 
+Добавь объекту atTheOldToad свойство potions, значением которого сделай пустой массив.
+
+const atTheOldToad = {
+  // Change code below this line
+potions:[]
+  // Change code above this line
+};
+
+37)
+
+Добавь объекту atTheOldToad метод getPotions(), который просто возвращает значение свойства potions.
+
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  // Change code below this line
+getPotions(){
+  return this.potions
+}
+  // Change code above this line
+};
+
+38)
 
