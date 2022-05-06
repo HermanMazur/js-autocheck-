@@ -814,3 +814,24 @@ this.potions.push(potionName)
 
 Дополни метод removePotion(potionName) так, чтобы он удалял зелье potionName из массива зелий в свойстве potions.
 
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  removePotion(potionName) {
+    // Change code below this line
+for(potion of this.potions){
+  if(potion === potionName){
+    const index = this.potions.indexOf(potionName)
+    this.potions.splice(index,1)
+  }
+}
+
+
+    // Change code above this line
+  },
+};
+
+40)
+
+Дополни метод updatePotionName(oldName, newName) так, чтобы он обновлял название зелья с oldName на newName, в массиве зелий в свойстве potions.
+
+
