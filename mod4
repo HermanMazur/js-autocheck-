@@ -84,3 +84,61 @@ pizzaPalace.order('Big Mike', makePizza, onOrderError);
 pizzaPalace.order('Vienna', makePizza, onOrderError);
 
 5)
+Функция calculateTotalPrice(orderedItems) принимает один параметр orderedItems - массив чисел, и рассчитывает общую сумму его элементов,
+которая сохраняется в переменной totalPrice и возвращается как результат работы функции.
+
+Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+
+
+
+function calculateTotalPrice(orderedItems) {
+  let totalPrice = 0;
+  // Change code below this line
+
+  // for (let i = 0; i < orderedItems.length; i += 1) {
+  //   totalPrice += orderedItems[i];
+  // }
+
+  orderedItems.forEach( function(number){
+    totalPrice+=number
+  })
+
+  // Change code above this line
+  return totalPrice;
+}
+
+6)
+
+Функция getCommonElements(firstArray, secondArray) принимает два массива произвольной длины в параметры firstArray и secondArray, 
+и возвращает новый массив их общих элементов, то есть тех которые есть в обоих массивах.
+
+Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
+  // Change code below this line
+
+  // for (let i = 0; i < numbers.length; i += 1) {
+  //   if (numbers[i] > value) {
+  //     filteredNumbers.push(numbers[i]);
+  //   }
+  // }
+numbers.forEach(function(number){
+  if(number> value){
+     filteredNumbers.push(number)
+  }
+})
+
+
+  // Change code above this line
+  return filteredNumbers;
+}
+
+7)
+Функция getCommonElements(firstArray, secondArray) принимает два массива произвольной длины в параметры firstArray и secondArray, 
+и возвращает новый массив их общих элементов, то есть тех которые есть в обоих массивах.
+
+Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
