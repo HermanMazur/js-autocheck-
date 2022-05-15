@@ -423,4 +423,36 @@ const booksByAuthor = books.filter(book => book.author === AUTHOR);
 
 22)
 
+Дополни функцию getUsersWithEyeColor(users, color) так,
+чтобы она возвращала массив пользователей у которых цвет глаз (свойство eyeColor) совпадает со значением параметра color.
 
+// Change code below this line
+const getUsersWithEyeColor = (users, color) => {
+    return users.filter(user => user.eyeColor === color) 
+ 
+
+};
+// Change code above this line
+
+23)
+
+Дополни функцию getUsersWithAge(users, minAge, maxAge) так, чтобы она возвращала массив пользователей, 
+возраст которых (свойство age) попадает в промежуток от minAge до maxAge.
+
+// Change code below this line
+const getUsersWithAge = (users, minAge, maxAge) => {
+ return users.filter(user => user.age > minAge && user.age < maxAge)
+
+};
+// Change code above this line
+
+24)
+
+Дополни функцию getUsersWithFriend(users, friendName) так, чтобы она возвращала массив пользователей у которых есть друг с именем в параметре friendName.
+Массив друзей пользователя хранится в свойстве friends.
+
+// Change code below this line
+const getUsersWithFriend = (users, friendName) => {
+   return users.filter(user => user.friends.includes(friendName))
+};
+// Change code above this line
