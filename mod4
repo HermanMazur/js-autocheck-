@@ -339,3 +339,29 @@ const getUserNames = users => {
   
   18)
   
+  Дополни функцию getUserEmails(users) так, чтобы она возвращала массив почтовых адресов пользователей (свойство email) из массива объектов в параметре users.
+  
+// Change code below this line
+const getUserEmails = users => {
+    return users.map(user => user.email)
+
+  };
+  // Change code above this line
+  
+  19)
+  
+  Дополни код так, чтобы в переменной evenNumbers получился массив чётных чисел из массива numbers, а в переменной oddNumbers массив нечётных.
+  Обязательно используй метод filter().
+  
+  const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// Change code below this line
+
+const evenNumbers = numbers.filter(value => value % 2===0);
+const oddNumbers = numbers.filter(value => value % 2===1);
+
+20)
+
+Дополни код так, чтобы в переменной allGenres был массив всех жанров книг (свойство genres) из массива books,
+а в переменной uniqueGenres массив уникальных жанров - без повторений.
+
+
