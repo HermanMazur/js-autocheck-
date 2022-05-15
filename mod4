@@ -456,3 +456,18 @@ const getUsersWithFriend = (users, friendName) => {
    return users.filter(user => user.friends.includes(friendName))
 };
 // Change code above this line
+
+25)
+
+Дополни функцию getFriends(users) так, чтобы она возвращала массив друзей всех пользователей (свойство friends). 
+У нескольких пользователей могут быть одинаковые друзья, сделай так чтобы возвращаемый массив не содержал повторений.
+
+// Change code below this line
+const getFriends = (users) => {
+  const allFriends = users.flatMap(user => user.friends);
+  const uniqFriends = allFriends.filter((user, index, array) => array.indexOf(user) === index)
+  return uniqFriends;
+};
+
+// Change code above this line
+
