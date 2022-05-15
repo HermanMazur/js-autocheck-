@@ -328,4 +328,14 @@ const genres = books.flatMap(genre =>genre.genres);
 
 17)
 
+Дополни функцию getUserNames(users) так, чтобы она возвращала массив имён пользователей (свойство name) из массива объектов в параметре users.
 
+// Change code below this line
+const getUserNames = users => {
+    return users.map(user =>user.name)
+
+  };
+  // Change code above this line
+  
+  18)
+  
