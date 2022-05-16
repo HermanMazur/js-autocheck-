@@ -597,3 +597,51 @@ const anyElementInThirdIsOdd = thirdArray.some(arr => arr % 2 !==0);
 
 33)
 
+Дополни функцию isAnyUserActive(users) так, чтобы она проверяла наличие активных пользователей (свойство isActive) и возвращала true или false.
+
+// Change code below this line
+const isAnyUserActive = users => {
+   return users.some(user => user.isActive === true)
+};
+// Change code above this line
+
+34)
+
+Игровому сервису необходим функционал подсчёта среднего времени проведённого в играх. 
+Дополни код так, чтобы в переменной totalPlayTime получилось общее игровое время из массива playtimes.
+
+const players = {
+  mango: 1270,
+  poly: 468,
+  ajax: 710,
+  kiwi: 244
+};
+const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// Change code below this line
+
+const totalPlayTime = playtimes.reduce((total, number) => {return total += number}, 0);
+
+// Change code above this line
+const averagePlayTime = totalPlayTime / playtimes.length;
+
+35)
+
+Нашему сервису необходимо рассчитать среднее время проведённое в одной игре для каждого игрока, и получить общую сумму этих времён. 
+Рассчитать время для каждого из игроков, можно разделив его время (свойство playtime) на количество игр (свойство gamesPlayed).
+
+const players = [
+  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+  { name: "Poly", playtime: 469, gamesPlayed: 2 },
+  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+];
+// Change code below this line
+
+const totalAveragePlaytimePerGame = players.reduce((oneGame, player) => {return oneGame + player.playtime/player.gamesPlayed},0);
+
+
+36)
+
+
+
+
