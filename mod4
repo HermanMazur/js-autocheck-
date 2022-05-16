@@ -653,3 +653,17 @@ const calculateTotalBalance = users => {
 
 37)
 
+Дополни функцию getTotalFriendCount(users) так, 
+чтобы она считала и возвращала общее количество друзей (свойство friends) всех пользователей из массива users.
+
+// Change code below this line
+const getTotalFriendCount = users => {
+  return users.reduce((total, user) => {return total + user.friends.length}, 0);
+};
+// Change code above this line
+
+38)
+
+Дополни код так, чтобы в переменной ascendingReleaseDates получилась отсортированная по возрастанию копия массива releaseDates, 
+а в переменной alphabeticalAuthors копия массива имён авторов authors отсортированная в по алфавиту.
+
