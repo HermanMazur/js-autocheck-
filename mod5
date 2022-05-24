@@ -626,8 +626,19 @@ isBlacklisted(email){
 }
 return false
 }
+
+
+/////isBlacklisted(email){
+  if(this.blacklistedEmails.includes(email)){
+    return true;
+  }
+  return false;
+}///// alter
+
   // Change code above this line
 }
+
+
 
 const mango = new Admin({
   email: "mango@mail.com",
